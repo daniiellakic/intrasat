@@ -5,6 +5,7 @@ import About from "./components/About";
 import Service from "./components/Service";
 import ImageGrid from "./components/ImageGrid";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <Service />
       <ImageGrid />
       <Contact />
+      <Footer />
 
     </div>
   );
