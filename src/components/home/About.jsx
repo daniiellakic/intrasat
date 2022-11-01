@@ -1,9 +1,9 @@
 import React from 'react'
-import Logo from '../assets/logga3.0.jpeg'
+import Logo from './../../assets/logga3.0.jpeg'
 
 const About = () => {
   return (
-    <div className=' bg-white w-full py-16 px-6'>
+    <div className=' bg-white w-full py-16 px-6' id='about'>
         <img className=' bg-white w-[400px] font-medium my-6 mx-auto py-2' src={Logo} alt="/" />
         <div className='justify-center max-w-[800px] mx-auto'>
             <h1 className=' text-[#000000] md:text-4xl sm:text-3xl text-2xl text-center uppercase p-2 py-2 font-bold underline decoration-yellow-400 decoration-4'>Om Oss</h1>   

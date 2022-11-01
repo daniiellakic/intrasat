@@ -1,25 +1,48 @@
 import React from "react";
-import Navbar from './components/Navbar';
-import Hero from "./components/Hero";
-import About from "./components/About";
-import Service from "./components/Service";
-import ImageGrid from "./components/ImageGrid";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-
+import Navbar from './components/home/Navbar';
+import Hero from "./components/home/Hero";
+import About from "./components/home/About";
+import Service from "./components/home/Service";
+import ImageGrid from "./components/home/ImageGrid";
+import Contact from "./components/home/Contact";
+import Footer from "./components/home/Footer";
+import { useEffect } from "react";
+import ContactForm from "./components/pages/ContactForm";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
+  useEffect(() => {
+    if (document) {
+      const stylesheet = document.createElement("link");
+      stylesheet.rel = "stylesheet";
+      stylesheet.href =
+        "https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css";
+
+      document.head.appendChild(stylesheet);
+    }
+  }, []);  
   return (
-    <div>
+    <>
       <Navbar />
       <Hero />
       <About  />
       <Service />
       <ImageGrid />
       <Contact />
-      <Footer />
+      <Router>
+                <Routes>
+                    <Route path="/contactForm" 
+                        element={<ContactForm />} />
 
-    </div>
+                </Routes>
+      </Router>
+      <Footer />
+    </>
   );
 }
 

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai'
+import { Link } from 'react-scroll';
 
 
 const Navbar = () => {
@@ -11,13 +12,21 @@ const Navbar = () => {
 
     }
   return (
-    <div className=' flex justify-between items-center h-24  max-w-[1240px] mx-auto px-6 text-white'>
-        <h1 className='w-full text-3xl font-bold text-[#ffd300]'>INTRASAT.</h1>
+    <div className='flex justify-between items-center h-24  max-w-[1240px] mx-auto px-6 text-white'>
+        <Link to='hero' className='cursor-pointer w-full text-3xl font-bold text-[#ffd300]'>INTRASAT.</Link>
         <ul className='hidden md:flex uppercase space-x-4'>
-            <li className='p-4 cursor-pointer transition duration-150 border-b-4 border-transparent hover:border-yellow-500'>Oss</li>
-            <li className='p-4 cursor-pointer transition duration-150 border-b-4 border-transparent hover:border-yellow-500'>Tjänster</li> 
-            <li className='p-4 cursor-pointer transition duration-150 border-b-4 border-transparent hover:border-yellow-500'>Jobb</li>
-            <li className='p-4 cursor-pointer transition duration-150 border-b-4 border-transparent hover:border-yellow-500'>Kontakt</li>
+            <li className='p-4 cursor-pointer transition duration-150 border-b-4 border-transparent hover:border-yellow-500'>
+              <Link to='about' smooth={true} duration={500}>Oss</Link>
+              </li>
+            <li className='p-4 cursor-pointer transition duration-150 border-b-4 border-transparent hover:border-yellow-500'>
+              <Link to='service' smooth={true} duration={500}>Tjänster</Link>
+              </li> 
+            <li className='p-4 cursor-pointer transition duration-150 border-b-4 border-transparent hover:border-yellow-500'>
+            <Link to='imageGrid' smooth={true} duration={500}>Jobb</Link>
+              </li>
+            <li className='p-4 cursor-pointer transition duration-150 border-b-4 border-transparent hover:border-yellow-500'>
+            <Link to='contact' smooth={true} duration={500}>Kontakt</Link>
+              </li>
         </ul>
         <div onClick={handleNav} className='block md:hidden'>
           {nav ? <AiOutlineClose size={30}/> : <AiOutlineMenu size={30} />}

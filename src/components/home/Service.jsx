@@ -1,11 +1,11 @@
 import React from 'react'
-import Transport from '../assets/truck.png'
-import Customer from '../assets/customer-service.png'
-import Wall from '../assets/brick-wall.png'
+import Transport from './../../assets/truck.png'
+import Customer from './../../assets/customer-service.png'
+import Wall from './../../assets/brick-wall.png'
 
 const Service = () => {
   return (
-    <div className='bg-white px-4 w-full py-[5rem]'>
+    <div className='bg-white px-4 w-full py-[5rem]' id='service'>
         <h1 className='md:text-4xl sm:text-3xl text-2xl text-center uppercase p-2 m-2 font-bold underline decoration-yellow-400 decoration-4'>Tjänster</h1>
         <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8 m-20">
             <div className="w-full shadow-xl flex flex-col p-4 my-8 rounded-lg hover:scale-[1.1] duration-300">
