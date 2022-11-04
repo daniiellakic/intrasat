@@ -1,13 +1,9 @@
 import React from "react";
-import Navbar from './components/home/Navbar';
-import Hero from "./components/home/Hero";
-import About from "./components/home/About";
-import Service from "./components/home/Service";
-import ImageGrid from "./components/home/ImageGrid";
-import Contact from "./components/home/Contact";
-import Footer from "./components/home/Footer";
+import Navbar from './components/Navbar';
+import Footer from "./components/Footer";
+import Home from "./pages/Home"
+import ContactForm from "./pages/ContactForm";
 import { useEffect } from "react";
-import ContactForm from "./components/pages/ContactForm";
 import {
   BrowserRouter as Router,
   Routes,
@@ -28,20 +24,15 @@ function App() {
   }, []);  
   return (
     <>
-      <Navbar />
-      <Hero />
-      <About  />
-      <Service />
-      <ImageGrid />
-      <Contact />
       <Router>
-                <Routes>
-                    <Route path="/contactForm" 
-                        element={<ContactForm />} />
-
-                </Routes>
+       <Navbar />
+       <Home />
+          <Routes>
+              <Route path="/" element={Home} />
+              <Route path="/contactForm" element={ContactForm} />
+          </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </>
   );
 }

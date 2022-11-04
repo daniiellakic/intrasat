@@ -1,7 +1,7 @@
 import React from 'react'
-import Transport from './../../assets/truck.png'
-import Customer from './../../assets/customer-service.png'
-import Wall from './../../assets/brick-wall.png'
+import Transport from '../assets/truck.png'
+import Customer from '../assets/customer-service.png'
+import Wall from '../assets/brick-wall.png'
 
 const Service = () => {
   return (

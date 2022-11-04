@@ -1,10 +1,9 @@
 import React from 'react'
-
-import Walk from './../../assets/walk.jpeg'
-import Hall from './../../assets/hall.jpeg'
-import Job from './../../assets/job.jpeg'
-import Wc from './../../assets/wc.jpeg'
-import Three from './../../assets/three.jpeg'
+import Walk from '../assets/walk.jpeg'
+import Hall from '../assets/hall.jpeg'
+import Job from '../assets/job.jpeg'
+import Wc from '../assets/wc.jpeg'
+import Three from '../assets/three.jpeg'
 
 const ImageGrid = () => {
   return (
