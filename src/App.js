@@ -3,12 +3,14 @@ import Navbar from './components/Navbar';
 import Footer from "./components/Footer";
 import Home from "./pages/Home"
 import ContactForm from "./pages/ContactForm";
+import Construction from "./pages/Counstruction"
+import Transport from "./pages/Transport"
+import Managment from "./pages/Managment"
 import { useEffect } from "react";
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 
 function App() {
@@ -24,15 +26,17 @@ function App() {
   }, []);  
   return (
     <>
-      <Router>
-       <Navbar />
-       <Home />
-          <Routes>
-              <Route path="/" element={Home} />
-              <Route path="/contactForm" element={ContactForm} />
-          </Routes>
-        <Footer />
-      </Router>
+     <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path="home" element={<Home />} />
+        <Route path="contactForm" element={<ContactForm />} />
+        <Route path="transport" element={<Transport />} />
+        <Route path="construction" element={<Construction />} />
+        <Route path="managment" element={<Managment />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
     </>
   );
 }
