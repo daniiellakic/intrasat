@@ -11,9 +11,7 @@ const About = () => {
                 Målet är att leverera våra tjänster på ett säkert, miljövänligt samt kvalitativt sätt och ge våra kunder den ultimata kundresan.
                 2020 ändrade vi bolagsform till AB och har interna avdelningar med fokus inom sitt område, transport, bygg & mark entreprenad samt förvaltning.
                 Vårt styrka är att vi är flexibla och står alltid redo för nya uppdrag för kort eller långsykt.</p>
-
         </div>
-      
     </div>
   )
 }

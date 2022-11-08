@@ -1,19 +1,15 @@
 import React from 'react'
 import Background from '../assets/background.jpg'
-import { Link } from 'react-router-dom'
 
 const Contact = () => {
   return (
-    <div className='w-full mt-18' id='contact'>
+    <div className='w-full mt-8 p-0 my-28' id='contact'>
         <div className='w-full h-600px bg-gray-900/90 absolute'>
-            <img className='w-full h-[20.5rem] md:h-[18.3rem] sm:h-[21rem] object-cover mix-blend-overlay' src={Background} alt="" />
+            <img className='w-full h-[22rem] md:h-[18.3rem] sm:h-[21rem] object-cover mix-blend-overlay' src={Background} alt="" />
         </div>
         <div className='text-white mx-auto text-center flex flex-col justify-center'>
             <h1 className=' z-10  text-white tracking-wider text-xl font-bold p-8'>Har du frågor eller funderingar?</h1>
-            <h1 className=' z-10 text-white tracking-wider text-3xl md:text-4xl sm:text-4xl  p-4 font-bold uppercase '>Tveka inte att kontakta oss!</h1>
-            <Link to='/contactForm' smooth={true} duration={500} className='p-8 z-10 bg-[#ffd300] w-[300px] uppercase rounded-md font-medium my-10 mx-auto py-3 text-black'>
-              <button>Kontakta oss här</button>
-            </Link>
+            <h1 className=' z-10 text-white tracking-wider text-3xl md:text-4xl sm:text-4xl p-9 sm:p-11 md:p-6 font-bold uppercase '>Tveka inte att kontakta oss!</h1>
         </div>       
     </div>
   )

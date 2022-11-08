@@ -12,14 +12,14 @@ const Service = () => {
             <div className="w-full shadow-xl flex flex-col p-4 my-8 rounded-lg hover:scale-[1.1] duration-300">
                 <img className='w-20 mx-auto mt-[-3rem] bg-white' src={Transport} alt="/" />
                 <h2 className='text-2xl font-bold text-center py-8'>Transport</h2>
-                <p className='py-2 border-b mx-8 text-center'>Vi har arbetat sida vid sida med stora aktörer inom transport där vi skräddarsyr tjänsten efter kundens behov.</p>
+                <p className='py-2 border-b mx-8 text-center'>Vi har arbetat sida vid sida med stora aktörer inom transport där vi skräddarsyr tjänsten efter kundens behov för att uppnå bästa resultat.</p>
                 <Link to='/transport' className='bg-[#ffd300] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black text-center'>
                     <button>Läs mer</button>
                 </Link>
             </div>
             <div className="w-full shadow-xl flex flex-col p-4 my-8 rounded-lg hover:scale-[1.1] duration-300">
                 <img className='w-20 mx-auto mt-[-3rem] bg-white' src={Wall} alt="/" />
-                <h2 className='text-2xl font-bold text-center py-8'>Bygg&Mark entrepenad</h2>
+                <h2 className='text-2xl font-bold text-center py-8'>Bygg & Mark</h2>
                 <p className='py-2 border-b mx-8 text-center'>Med fler års erfarenhet vi utför byggtjänster och ser varje projekt som en referens och gör alltid vårt yttersta för att förverkliga era idéer.</p>
                 <Link to='/construction' className='bg-[#ffd300] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black text-center'>
                     <button>Läs mer</button>
