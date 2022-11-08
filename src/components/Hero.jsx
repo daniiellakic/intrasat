@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
+
 const Hero = () => {
   return (
     <div className='text-white bg-[#000300]' id='hero'>
@@ -12,7 +13,6 @@ const Hero = () => {
           <button>Kontaka Oss</button>
           </Link>
         </div>
-
     </div>
   )
 }

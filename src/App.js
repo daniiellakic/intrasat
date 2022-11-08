@@ -15,7 +15,6 @@ import {
 } from "react-router-dom";
 import Service from "./components/Service";
 import ImageGrid from "./components/ImageGrid";
-import Contact from "./components/Contact";
 
 function App() {
   useEffect(() => {
@@ -33,7 +32,7 @@ function App() {
      <BrowserRouter>
       <Navbar/>
       <Routes>
-        <Route path="home" element={<Home />} />
+        <Route exact path="*" element={<Home />} /> 
         <Route path="contactForm" element={<ContactForm />} />
         <Route path="about" element={<About />} />
         <Route path="service" element={<Service />} />
