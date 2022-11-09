@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const Service = () => {
   return (
-    <div className='bg-white px-4 w-full py-[5rem]' id='service'>
+    <div className='bg-white px-4 w-full' id='service'>
         <h1 className='md:text-4xl sm:text-3xl text-2xl text-center uppercase p-2 m-2 font-bold underline decoration-[#ffd300] decoration-4'>Tjänster</h1>
         <div className="max-w-[1240px] mx-auto grid md:grid-cols-3 gap-8 m-20">
             <div className="w-full shadow-xl flex flex-col p-4 my-8 rounded-lg hover:scale-[1.1] duration-300">

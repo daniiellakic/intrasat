@@ -5,7 +5,7 @@ const Contact = () => {
   return (
     <div className='w-full mt-8 p-0 my-28' id='contact'>
         <div className='w-full h-600px bg-gray-900/90 absolute'>
-            <img className='w-full h-[22rem] md:h-[18.3rem] sm:h-[21rem] object-cover mix-blend-overlay' src={Background} alt="" />
+            <img className='w-full h-[23.5rem] md:h-[18.3rem] sm:h-[21rem] object-cover mix-blend-overlay' src={Background} alt="" />
         </div>
         <div className='text-white mx-auto text-center flex flex-col justify-center'>
             <h1 className=' z-10  text-white tracking-wider text-xl font-bold p-8'>Har du frågor eller funderingar?</h1>
