@@ -25,10 +25,10 @@ const ContactForm = () => {
       items-center justify-center"
     >
       <div className="mb-20 pt-20">
-        <h3 className="text-center text-black uppercase font-bold text-3xl">Kontakta oss här</h3>
+        <h3 className="text-center text-black uppercase font-bold text-3xl underline decoration-[#ffd300] decoration-4">Kontakta oss här</h3>
       </div>
       <form
-        className="bg-white shadow-md rounded px-20 pt-20 pb-10 mb-14"
+        className="bg-white shadow-md rounded px-25 pt-20 pb-10 md:px-8 mb-14"
         action={FORM_ENDPOINT}
         onSubmit={handleSubmit}
         method="POST"
@@ -39,7 +39,7 @@ const ContactForm = () => {
             type="text"
             placeholder="Ditt namn"
             name="name"
-            className="px-8 py-4 placeholder-gray-400 text-black relative bg-white rounded-md text-xl border-2 shadow outline-none focus:outline-none focus:ring w-full text-center"
+            className="px-18 py-4 placeholder-gray-400 text-black relative bg-white rounded-md text-xl border-2 shadow outline-none focus:outline-none focus:ring w-full text-center"
             required
           />
         </div>
@@ -54,9 +54,9 @@ const ContactForm = () => {
         </div>
         <div className="mb-3 pt-0">
           <textarea
-            placeholder="Ditt meddelnade"
+            placeholder="Vad behöver ni hjälp med?"
             name="message"
-            className="px-8 py-3 placeholder-gray-400  active:bg-[#ffd300] relative bg-white rounded-md text-xl border-2 shadow outline-none focus:outline-none focus:ring w-full text-center"
+            className="px-8 py-10 md:px-2 placeholder-gray-400  active:bg-[#ffd300] relative bg-white rounded-md text-xl border-2 shadow outline-none focus:outline-none focus:ring w-full text-center"
             required
           />
         </div>
