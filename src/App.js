@@ -7,6 +7,7 @@ import Construction from "./pages/Counstruction"
 import Transport from "./pages/Transport"
 import Managment from "./pages/Managment"
 import About from "./components/About"
+import ScrollToTop from "./components/ScrollToTop";
 import { useEffect } from "react";
 import {
   BrowserRouter,
@@ -31,6 +32,7 @@ function App() {
     <>
      <BrowserRouter>
       <Navbar/>
+      <ScrollToTop />
       <Routes>
         <Route exact path="*" element={<Home />} /> 
         <Route path="contactForm" element={<ContactForm />} />

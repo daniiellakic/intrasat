@@ -5,18 +5,18 @@ import { Link } from 'react-router-dom'
 const Footer = () => {
   return (
     <div>
-        <div className='bg-[#000300] w-full mt-16 z-40 grid lg:grid-cols-4 md:flex-row  md:space-x-3 text-center justify-center' id='contact'>
-           <Link to='/about' className='p-2 z-10 text-gray-500 w-[200px] font-bold underline decoration-[#ffd300] decoration-4 mx-auto py-3'>
-           <button>Om Oss</button>
+        <div className='bg-[#000300] w-full mt-16  grid lg:grid-cols-4 md:flex-row  md:space-x-3 text-center justify-center' id='contact'>
+           <Link to='/about'>
+           <button className='p-2 z-10 text-gray-500 w-[200px] font-bold underline decoration-[#ffd300] decoration-4 mx-auto py-4'>Om Oss</button>
            </Link>
-           <Link to='/service' className='p-2 z-10 text-gray-500 w-[200px] font-bold underline decoration-[#ffd300] decoration-4 mx-auto py-3'>
-           <button>Våra tjänster</button>
+           <Link to='/service'>
+           <button className='p-2 z-10 text-gray-500 w-[200px] font-bold mx-auto py-3 underline decoration-[#ffd300] decoration-4'>Våra tjänster</button>
            </Link>
-           <Link to='/imageGrid' className='p-2 z-10 text-gray-500 w-[200px] font-bold underline decoration-[#ffd300] decoration-4 mx-auto py-3'>
-           <button>Vårt Jobb</button>
+           <Link to='/imageGrid'>
+           <button className='p-2 z-10 text-gray-500 w-[200px]  mx-auto py-3 font-bold underline decoration-[#ffd300] decoration-4'>Vårt Jobb</button>
            </Link>
-           <Link to='/contactForm' className='p-2 z-10 text-black-500 bg-[#ffd300] w-[150px] rounded-md font-medium my-2 mx-auto py-1'>
-           <button>Kontakta Oss</button>
+           <Link to='/contactForm'>
+           <button className='p-2 z-10  text-black-500 bg-[#ffd300] w-[150px] rounded-md mx-auto font-medium my-2 py-1'>Kontakta Oss</button>
            </Link>     
         </div>
         <div className='bg-[#000300] w-full mx-auto py-16 px-10 sm:px-24 grid lg:grid-cols-3 gap-10 text-gray-300'>
